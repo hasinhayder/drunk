@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("posts"); ?>>
 	<header class="entry-header">
 		<div class="entry-meta">
 			<?php drunk_posted_on(); ?>
@@ -15,6 +15,12 @@
 
 		<?php endif; ?>
 	</header><!-- .entry-header -->
+
+	<?php if(has_post_thumbnail()):?>
+		<div class="entry-thumb">
+			<?php the_post_thumbnail();?>
+		</div>
+	<?php endif;?>
 
 	<div class="entry-content">
 		<?php

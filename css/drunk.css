@@ -16,20 +16,22 @@ body {
 }
 .banner {
   min-height: 200px;
-  padding-bottom: 50px;
-  margin-bottom: 100px;
+  padding-bottom: 80px;
+  margin-bottom: 120px;
   background-image: url(../img/grey.png);
+  background-image: url(../img/graphy.png);
   background-position: center;
 }
 .banner h1.site-title {
   padding: 0px;
   margin: 0px;
-  padding-top: 240px;
+  padding-top: 220px;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 64px;
   color: #CE1836;
   color: #181419;
+  color: #FC354C;
   font-family: "Coda";
 }
 .banner h2.site-description {
@@ -44,8 +46,6 @@ body {
   padding-top: 40px;
   list-style: none;
   list-style-type: none;
-  font-family: "Coda";
-  font-weight: 400;
 }
 .banner nav ul li {
   padding: 0px;
@@ -54,7 +54,8 @@ body {
   display: inline;
   margin-left: 18px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 700;
 }
 .banner nav ul li a {
   text-decoration: none;
@@ -76,11 +77,12 @@ h1.entry-title {
   text-transform: uppercase;
   color: #070001;
   margin-bottom: 40px;
+  line-height: 48px;
 }
 .entry-meta {
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #D6254D;
+  color: #FC354C;
   font-family: "Coda", sans-serif;
 }
 a {
@@ -95,7 +97,7 @@ h1 a:hover,
 h2 a:hover,
 .entry-meta a:hover {
   text-decoration: none;
-  color: #D3643B;
+  color: #FC354C;
 }
 .entry-content {
   font-size: 18px;
@@ -109,4 +111,12 @@ footer.site-footer {
   margin-top: 50px;
   min-height: 100px;
   background-color: #070001;
+}
+.entry-thumb {
+  margin-bottom: 20px;
+}
+article.posts {
+  margin-bottom: 50px;
+  border-bottom: 5px solid #eee;
+  padding-bottom: 50px;
 }

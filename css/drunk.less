@@ -69,11 +69,12 @@ body{
 .banner{
 //
   min-height: 200px;
-  .pb(50px);
-  .mb(100px);
+  .pb(80px);
+  .mb(120px);
 //  text-align: center;
 //  background-image: url(../img/swirl_pattern.png);
   background-image: url(../img/grey.png);
+  background-image: url(../img/graphy.png);
 //  background-image: url(../img/subtle_grunge.png);
 //  background-image: url(../img/diver.jpg);
   background-position:center;
@@ -81,12 +82,13 @@ body{
 
   h1.site-title{
     .mp;
-    .pt(240px);
+    .pt(220px);
     font-weight: 800;
     text-transform: uppercase;
     font-size: 64px;
     color: #CE1836;
     color: #181419;
+    color: #FC354C;
     font-family: "Coda";
 //    color: #f6fefe;
   }
@@ -112,8 +114,6 @@ body{
 
     list-style: none;
     list-style-type: none;
-    font-family: "Coda";
-    font-weight: 400;
 
 
     li{
@@ -122,7 +122,8 @@ body{
       display: inline;
       .ml(18px);
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 14px;
+      font-weight: 700;
 
       a{
         text-decoration: none;
@@ -150,14 +151,15 @@ h1.entry-title{
   text-transform: uppercase;
   color: #070001;
   .mb(40px);
+  line-height: 48px;
 
 
 }
 
 .entry-meta{
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
-  color:#D6254D;
+  color:#FC354C;
   font-family: "Coda", sans-serif;
 
 }
@@ -175,7 +177,7 @@ a:hover{
 
 h1 a:hover, h2 a:hover, .entry-meta a:hover{
   text-decoration: none;
-  color: #D3643B;
+  color: #FC354C;
 }
 
 .entry-content{
@@ -192,4 +194,14 @@ footer.site-footer{
   .mt(50px);
   min-height: 100px;
   background-color: #070001;
+}
+
+.entry-thumb{
+  .mb(20px);
+}
+
+article.posts{
+  .mb(50px);
+  border-bottom: 5px solid #eee;
+  .pb(50px);
 }
