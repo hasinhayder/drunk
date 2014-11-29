@@ -410,7 +410,7 @@ a {
 }
 
 a:visited {
-	color: purple;
+	/*color: purple;*/
 }
 
 a:hover,
@@ -425,7 +425,7 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	/*float: left;*/
 	width: 100%;
 }
 

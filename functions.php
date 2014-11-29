@@ -94,6 +94,7 @@ add_action( 'widgets_init', 'drunk_widgets_init' );
 function drunk_scripts() {
 	wp_enqueue_style( 'drunk-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'drunk-bs', "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" );
+	wp_enqueue_style( 'drunk-drunk', get_template_directory_uri()."/css/drunk.css" );
 
 	wp_enqueue_script( 'drunk-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

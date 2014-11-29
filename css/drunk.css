@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
+@import url(http://fonts.googleapis.com/css?family=Coda:400,800);
+/** Variables **/
+/** Mixins **/
+.p0 {
+  padding: 0px;
+}
+.m0 {
+  margin: 0px;
+}
+/** Mixins End **/
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.banner {
+  min-height: 200px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  background-image: url(../img/grey.png);
+  background-position: center;
+}
+.banner h1.site-title {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 240px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 64px;
+  color: #CE1836;
+  color: #181419;
+  font-family: "Coda";
+}
+.banner h2.site-description {
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #181419;
+}
+.banner nav ul {
+  padding-top: 40px;
+  list-style: none;
+  list-style-type: none;
+  font-family: "Coda";
+  font-weight: 400;
+}
+.banner nav ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: inline;
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.banner nav ul li a {
+  text-decoration: none;
+  color: #181419;
+}
+.banner nav ul li a:hover {
+  color: #FC354C;
+}
+.banner h1 a,
+.banner h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+h1.entry-title {
+  font-weight: 700;
+  font-family: "Coda";
+  font-size: 36px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #070001;
+  margin-bottom: 40px;
+}
+.entry-meta {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #D6254D;
+  font-family: "Coda", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+.entry-meta a:hover {
+  text-decoration: none;
+  color: #D3643B;
+}
+.entry-content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+}
+.entry-content p {
+  padding-bottom: 20px;
+}
+footer.site-footer {
+  margin-top: 50px;
+  min-height: 100px;
+  background-color: #070001;
+}
