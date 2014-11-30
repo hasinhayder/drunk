@@ -103,8 +103,8 @@ body {
     color: #CE1836;
     font-family: "Coda";
     color: #FC354C;
-    color: #181419;
     color: #f6fefe;
+    color: #181419;
     .mt(400px);
 
   }
@@ -191,10 +191,11 @@ h1.entry-title {
 }
 
 .entry-meta {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #FC354C;
+//  color: #FC354C;
   font-family: "Coda", sans-serif;
+//  font-weight: 600;
 
 }
 
@@ -237,19 +238,40 @@ footer.site-footer {
 article.posts {
   .mb(80px);
   border-bottom: 8px solid #eee;
-  .pb(80px);
+  .pb(50px);
+}
+
+article.posts:last-of-type{
+  border-bottom: none;
+  .pb(0px);
+  .mb(0px);
 }
 
 .jp-carousel-image-meta, .jp-carousel-comment-form-container {
   display: none;
 }
 
-span.cat-links a, span.tags-links a {
+
+
+div.tags-links a:hover {
   color: #FC354C;
 }
 
-span.tags-links, span.cat-links {
-  margin-right: 20px;
+.edit-link{
+  color: #FC354C;
+}
+
+div.tags-links{
+  .mb(10px);
+  .mt(15px);
+  font-family: "Coda", sans-serif;
+  font-weight: 600;
+}
+
+div.comments-link{
+//  font-family: "Coda", sans-serif;
+//  font-weight: 600;
+  font-size: 20px;
 }
 
 /** Mini quote **/
@@ -270,8 +292,8 @@ span.tags-links, span.cat-links {
 
 /** sidebar **/
 input[type="search"]{
-  width:100% !important;
-  height:35px !important;
+  width:100% ;
+  height:45px !important;
   .p(5px);
 }
 
@@ -301,7 +323,7 @@ aside.widget{
   }
 }
 
-h1.widget-title{
+h1.widget-title {
   font-family: "Coda", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -309,4 +331,11 @@ h1.widget-title{
   .pb(10px);
   .mb(10px);
   border-bottom:1px solid #ddd;
+}
+
+.page-title{
+  font-family: "Coda", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
 }

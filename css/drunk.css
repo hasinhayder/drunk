@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
 @import url(http://fonts.googleapis.com/css?family=Coda:400,800);
 /** Variables **/
 /** Mixins **/
@@ -41,8 +42,8 @@ body {
   color: #CE1836;
   font-family: "Coda";
   color: #FC354C;
-  color: #181419;
   color: #f6fefe;
+  color: #181419;
   margin-top: 400px;
 }
 .banner h2.site-description {
@@ -107,9 +108,8 @@ h1.entry-title {
   line-height: 40px;
 }
 .entry-meta {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #FC354C;
   font-family: "Coda", sans-serif;
 }
 a {
@@ -146,19 +146,31 @@ div.tiled-gallery {
 article.posts {
   margin-bottom: 80px;
   border-bottom: 8px solid #eee;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+}
+article.posts:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .jp-carousel-image-meta,
 .jp-carousel-comment-form-container {
   display: none;
 }
-span.cat-links a,
-span.tags-links a {
+div.tags-links a:hover {
   color: #FC354C;
 }
-span.tags-links,
-span.cat-links {
-  margin-right: 20px;
+.edit-link {
+  color: #FC354C;
+}
+div.tags-links {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-family: "Coda", sans-serif;
+  font-weight: 600;
+}
+div.comments-link {
+  font-size: 20px;
 }
 /** Mini quote **/
 .miniquote {
@@ -175,8 +187,8 @@ span.cat-links {
 }
 /** sidebar **/
 input[type="search"] {
-  width: 100% !important;
-  height: 35px !important;
+  width: 100% ;
+  height: 45px !important;
   padding: 5px;
 }
 aside.widget {
@@ -210,4 +222,10 @@ h1.widget-title {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
+}
+.page-title {
+  font-family: "Coda", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
 }

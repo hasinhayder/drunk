@@ -66,6 +66,16 @@ if ( ! function_exists( 'drunk_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function drunk_posted_on() {
+
+	if ( 'post' == get_post_type() ) {
+		/* translators: used between list items, there is a space after the comma */
+		$categories_list = get_the_category_list( __( ', ', 'drunk' ) );
+		if ( $categories_list && drunk_categorized_blog() ) {
+			$cats = sprintf( '<span class="cat-links">' . __( 'in %1$s', 'drunk' ) . '</span>', $categories_list );
+		}
+
+	}
+
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -79,7 +89,7 @@ function drunk_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'drunk' ),
+		_x( 'Posted '. $cats . ' on %s', 'post date', 'drunk' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -89,7 +99,7 @@ function drunk_posted_on() {
 	);
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
-	edit_post_link( __( 'Edit', 'drunk' ), '<span class="edit-link"> / ', '</span>' );
+	edit_post_link( __( 'Edit', 'drunk' ), '<span class="edit-link"> ● ', '</span>' );
 
 }
 endif;
@@ -102,15 +112,15 @@ function drunk_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'drunk' ) );
-		if ( $categories_list && drunk_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'drunk' ) . '</span>', $categories_list );
-		}
+//		$categories_list = get_the_category_list( __( ', ', 'drunk' ) );
+//		if ( $categories_list && drunk_categorized_blog() ) {
+//			printf( '<div class="cat-links">' . __( 'Posted in %1$s', 'drunk' ) . '</div>', $categories_list );
+//		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'drunk' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'drunk' ) . '</span>', $tags_list );
+			printf( '<div class="tags-links">' . __( 'Tags: %1$s', 'drunk' ) . '</div>', $tags_list );
 		}
 	}
 
