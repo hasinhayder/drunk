@@ -105,6 +105,7 @@ function drunk_scripts() {
 	wp_enqueue_script( 'drunk-wow', '//cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js', array("jquery"), '20130115', true );
 	wp_enqueue_script( 'drunk-ss', get_template_directory_uri()."/js/jquery.smoothState.js", array("jquery"), '20130115', true );
 	wp_enqueue_script( 'drunk-main', get_template_directory_uri()."/js/drunk.js", array("jquery"), '20130115', true );
+	wp_localize_script( 'drunk-main',"data",array("url"=>site_url("/")) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

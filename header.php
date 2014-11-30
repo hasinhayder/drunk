@@ -50,8 +50,9 @@
 
 					<header id="masthead" class="site-header" role="banner">
 						<div class="site-branding wow bounceInDown">
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-							                          rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="site-title">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							</h1>
 
 							<h2 class="site-description wow bounceInDown"><?php bloginfo( 'description' ); ?></h2>
 						</div>

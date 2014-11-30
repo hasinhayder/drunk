@@ -1,4 +1,5 @@
 ;
+var data;
 (function ($) {
     $(document).ready(function () {
         new WOW().init();
@@ -25,7 +26,13 @@
                     $("#drunkmain").removeClass("fadeOut");
                     $("#drunkmain").addClass("fadeIn");
                     $("#drunkmain").css({cursor:"default"});
-                    $("body").scrollTop(0);
+                    if(url != data.url){
+                        //only if it's not homepage, then scroll
+                        $("body").scrollTop(600);
+                    }else{
+                        $("body").scrollTop(0);
+                    }
+
                 }
             }
         },{
