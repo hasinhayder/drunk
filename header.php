@@ -19,6 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="drunkmain">
 <div class="sidenav" id="sidenav">
     <nav id="site-navigation" class="wow" role="navigation">
         <button class="menu-toggle" aria-controls="menu"
@@ -28,7 +29,7 @@
 </div>
 
 <div id="page" class="hfeed site">
-	<div class="banner">
+	<div class="banner bannerbg" id="mainbanner">
         <div class="banner-overlay"></div>
 		<div class="container" id="header">
             <div class="row">

@@ -6,12 +6,19 @@
  *
  * @package drunk
  */
-
+ob_start();
+get_sidebar();
+$sidebar = ob_get_clean();
+$classname = "col-md-9";
+if($sidebar) $classname = "col-md-8";
 get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<?php if(!$sidebar):?>
+			<div class="col-md-2"></div>
+		<?php endif; ?>
+		<div class="<?php echo $classname;?>">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 
@@ -50,9 +57,14 @@ get_header(); ?>
 			</div>
 			<!-- #primary -->
 		</div>
-		<div class="col-md-3">
-			<?php get_sidebar(); ?>
-		</div>
+		<?php if(!$sidebar):?>
+			<div class="col-md-2"></div>
+		<?php endif; ?>
+		<?php if($sidebar):?>
+			<div class="col-md-3">
+				<?php echo $sidebar; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 </div>
 

@@ -65,7 +65,26 @@
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+//  background-image: url(../img/light_wool.png);
+
+
   //  -webkit-text-stroke: 0.35px;
+}
+
+.bannerbg{
+    background-image: url(../img/banner2.jpg);
+    background-position: center -180px;
+    background-size: cover;
+}
+
+.bannervideo{
+  h1.site-title, h2.site-description, .resp{
+    color: #f6fefe !important;
+  }
+
+  h1.site-title{
+    .mt(350px) !important;
+  }
 }
 
 .banner {
@@ -73,17 +92,8 @@ body {
   position: relative;
   min-height: 600px;
   .pb(80px);
-  .mb(120px);
-  //  text-align: center;
-  //  background-image: url(../img/swirl_pattern.png);
-  background-image: url(../img/grey.png);
-  background-image: url(../img/graphy.png);
-  background-image: url(../img/banner2.jpg);
+  .mb(80px);
 
-  //  background-image: url(../img/subtle_grunge.png);
-  //  background-image: url(../img/diver.jpg);
-  background-position: center -180px;
-  background-size: cover;
   overflow: hidden;
   //  background-image: url(../img/linedpaper.png);
 
@@ -337,6 +347,7 @@ h1.widget-title {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
+  .mt(-30px);
 }
 
 .nav-previous, .nav-next {
