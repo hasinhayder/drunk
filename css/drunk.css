@@ -25,14 +25,13 @@ body {
 .banner h1.site-title {
   padding: 0px;
   margin: 0px;
-  padding-top: 220px;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 64px;
   color: #CE1836;
   color: #181419;
-  color: #FC354C;
   font-family: "Coda";
+  margin-top: 220px;
 }
 .banner h2.site-description {
   padding: 0px;
