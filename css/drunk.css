@@ -103,7 +103,7 @@ h1.entry-title {
   margin-top: 10px;
   text-transform: uppercase;
   color: #070001;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 48px;
   line-height: 40px;
 }
@@ -233,9 +233,13 @@ h1.widget-title {
 .nav-previous,
 .nav-next {
   padding-bottom: 40px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #FC354C;
+}
+.nav-previous i,
+.nav-next i {
+  font-size: 14px;
 }
 h3.comment-reply-title {
   font-family: "Coda", sans-serif;

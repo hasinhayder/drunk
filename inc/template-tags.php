@@ -52,8 +52,8 @@ function drunk_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'drunk' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'drunk' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'drunk' ) );
+				previous_post_link( '<div class="nav-previous wow fadeInUp">%link</div>', _x( '<span class="meta-nav"><i class="fa fa-chevron-left"></i> </span>&nbsp;%title', 'Previous post link', 'drunk' ) );
+				next_post_link(     '<div class="nav-next wow fadeInUp">%link</div>',     _x( '%title&nbsp;<span class="meta-nav"><i class="fa fa-chevron-right"></i></span>', 'Next post link',     'drunk' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
