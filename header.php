@@ -33,7 +33,7 @@
 		<div class="container" id="header">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="resp">
+                    <div class="resp wow fadeInDown">
                         <a href="#">
                             <i class="fa fa-bars"></i>
                         </a>
@@ -55,8 +55,6 @@
 							<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						</div>
 						<!-- .site-branding -->
-
-
 					</header>
 					<!-- #masthead -->
 				</div>

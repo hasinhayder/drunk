@@ -146,3 +146,53 @@ function filter_media_comment_status( $open, $post_id ) {
 	return $open;
 }
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
+
+// Hooks your functions into the correct filters
+function my_add_mce_button() {
+    // check user permissions
+    if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) ) {
+        return;
+    }
+    // check if WYSIWYG is enabled
+    if ( 'true' == get_user_option( 'rich_editing' ) ) {
+        add_filter( 'mce_external_plugins', 'my_add_tinymce_plugin' );
+        add_filter( 'mce_buttons', 'my_register_mce_button' );
+    }
+}
+add_action('admin_head', 'my_add_mce_button');
+
+// Declare script for new button
+function my_add_tinymce_plugin( $plugin_array ) {
+    $plugin_array['my_mce_button'] = get_template_directory_uri() .'/js/mce-button.js';
+    return $plugin_array;
+}
+
+// Register new button in the editor
+function my_register_mce_button( $buttons ) {
+    array_push( $buttons, 'my_mce_button' );
+    return $buttons;
+}
+
+function sayHello(){
+    ?>
+    <h2>Hello World</h2>
+    <p>Hello Hello, Where is everyone</p>
+    <input id="hello" type="text"/>
+    <button id="myb">Click Me</button>
+
+    <script type="text/javascript">
+        ;(function($){
+            //alert("I am loaded");
+            $("#myb").on("click",function(){
+                tinyMCE.activeEditor.insertContent('WPExplorer.com is Awesome! ' + $("#hello").val());
+                tb_remove();
+            })
+        })(jQuery);
+    </script>
+    <?php
+    die("");
+}
+
+
+add_action("wp_ajax_popup","sayHello");
+add_action("wp_ajax_nopriv_popup","sayHello");
