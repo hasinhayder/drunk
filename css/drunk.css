@@ -16,8 +16,9 @@ body {
 }
 .bannerbg {
   background-image: url(../img/banner2.jpg);
-  background-position: center -180px;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .bannervideo h1.site-title,
 .bannervideo h2.site-description,
@@ -52,7 +53,7 @@ body {
   color: #FC354C;
   color: #f6fefe;
   color: #181419;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 .banner h2.site-description {
   padding: 0px;

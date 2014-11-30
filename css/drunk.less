@@ -65,24 +65,24 @@
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-//  background-image: url(../img/light_wool.png);
-
+  //  background-image: url(../img/light_wool.png);
 
   //  -webkit-text-stroke: 0.35px;
 }
 
-.bannerbg{
-    background-image: url(../img/banner2.jpg);
-    background-position: center -180px;
-    background-size: cover;
+.bannerbg {
+  background-image: url(../img/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.bannervideo{
-  h1.site-title, h2.site-description, .resp{
+.bannervideo {
+  h1.site-title, h2.site-description, .resp {
     color: #f6fefe !important;
   }
 
-  h1.site-title{
+  h1.site-title {
     .mt(350px) !important;
   }
 }
@@ -115,7 +115,7 @@ body {
     color: #FC354C;
     color: #f6fefe;
     color: #181419;
-    .mt(200px);
+    .mt(300px);
 
   }
 
@@ -357,7 +357,7 @@ h1.widget-title {
   font-weight: 600;
   color: #FC354C;
 
-  i{
+  i {
     font-size: 14px;
   }
 }
@@ -390,21 +390,21 @@ ol.comment-list {
     font-weight: 600;
   }
 
-  li{
+  li {
     .mb(30px);
-    list-style:none;
+    list-style: none;
   }
 
-  li ol{
+  li ol {
     .mt(30px);
   }
-  article.comment-body{
+  article.comment-body {
     .pb(30px);
-    border-bottom:1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
 
   }
 
-  > li:last-of-type article.comment-body{
+  > li:last-of-type article.comment-body {
     border-bottom: none;
     .pb(0px);
   }
@@ -428,7 +428,7 @@ ol.comment-list {
   line-height: 30px;
 }
 
-#cancel-comment-reply-link{
+#cancel-comment-reply-link {
   font-size: 13px;
 }
 

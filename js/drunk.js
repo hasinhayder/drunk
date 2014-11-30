@@ -4,6 +4,9 @@ var data;
     $(document).ready(function () {
         new WOW().init();
 
+        h = $(window).height();
+        $("#mainbanner").height(h-100);
+
 
         //$("#mainbanner.bannervideo").vide({
         //    webm:"http://mazwai.com/system/posts/videos/000/000/138/webm/matt_devir--one_minute_drive.webm",
@@ -26,9 +29,11 @@ var data;
                     $("#drunkmain").removeClass("fadeOut");
                     $("#drunkmain").addClass("fadeIn");
                     $("#drunkmain").css({cursor:"default"});
+                    h = $(window).height();
+                    $("#mainbanner").height(h-100);
                     if(url != data.url){
                         //only if it's not homepage, then scroll
-                        $("body").scrollTop(600);
+                        $("body").scrollTop(h);
                     }else{
                         $("body").scrollTop(0);
                     }
