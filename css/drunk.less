@@ -267,3 +267,46 @@ span.tags-links, span.cat-links {
 .sidenav{
   display:none;
 }
+
+/** sidebar **/
+input[type="search"]{
+  width:100% !important;
+  height:35px !important;
+  .p(5px);
+}
+
+aside.widget{
+  .mb(40px);
+
+  ul{
+    .mp(0);
+    .pt(5px);
+    list-style-type: none;
+
+    li{
+      list-style-type: none;
+      .mp(0);
+      .mb(10px);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 30px;
+      .pb(10px);
+      border-bottom: 1px dotted #ddd;
+//      text-transform: uppercase;
+
+      a:hover {
+        color: #FC354C;
+      }
+    }
+  }
+}
+
+h1.widget-title{
+  font-family: "Coda", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  .pb(10px);
+  .mb(10px);
+  border-bottom:1px solid #ddd;
+}
