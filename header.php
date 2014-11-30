@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div class="sidenav" id="sidenav">
-    <nav id="site-navigation" class="wow fadeIn" role="navigation">
+    <nav id="site-navigation" class="wow" role="navigation">
         <button class="menu-toggle" aria-controls="menu"
                 aria-expanded="false"><?php _e( 'Primary Menu', 'drunk' ); ?></button>
         <?php wp_nav_menu( array( 'menu_class'=>'pull-right wow fadeIn', 'theme_location' => 'primary' ) ); ?>

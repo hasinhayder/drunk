@@ -78,11 +78,11 @@ body {
   //  background-image: url(../img/swirl_pattern.png);
   background-image: url(../img/grey.png);
   background-image: url(../img/graphy.png);
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner2.jpg);
 
   //  background-image: url(../img/subtle_grunge.png);
   //  background-image: url(../img/diver.jpg);
-  background-position: center;
+  background-position: center -180px;
   background-size: cover;
   overflow: hidden;
   //  background-image: url(../img/linedpaper.png);
@@ -90,7 +90,7 @@ body {
   .banner-overlay {
     min-height: 700px;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: rgba(20, 20, 20, 0.0);
     position: absolute;
   }
 
@@ -105,7 +105,7 @@ body {
     color: #FC354C;
     color: #f6fefe;
     color: #181419;
-    .mt(400px);
+    .mt(200px);
 
   }
 
@@ -153,12 +153,12 @@ body {
     }
   }
 
-  .resp{
+  .resp {
     .pt(40px);
     text-align: right;
-    color: #f6fefe;
+    color: #181419;
 
-    i{
+    i {
       font-size: 20px;
       cursor: pointer;
     }
@@ -193,9 +193,9 @@ h1.entry-title {
 .entry-meta {
   font-size: 14px;
   text-transform: uppercase;
-//  color: #FC354C;
+  //  color: #FC354C;
   font-family: "Coda", sans-serif;
-//  font-weight: 600;
+  //  font-weight: 600;
 
 }
 
@@ -241,7 +241,7 @@ article.posts {
   .pb(50px);
 }
 
-article.posts:last-of-type{
+article.posts:last-of-type {
   border-bottom: none;
   .pb(0px);
   .mb(0px);
@@ -251,61 +251,59 @@ article.posts:last-of-type{
   display: none;
 }
 
-
-
 div.tags-links a:hover {
   color: #FC354C;
 }
 
-.edit-link{
+.edit-link {
   color: #FC354C;
 }
 
-div.tags-links{
+div.tags-links {
   .mb(10px);
   .mt(15px);
   font-family: "Coda", sans-serif;
   font-weight: 600;
 }
 
-div.comments-link{
-//  font-family: "Coda", sans-serif;
-//  font-weight: 600;
+div.comments-link {
+  //  font-family: "Coda", sans-serif;
+  //  font-weight: 600;
   font-size: 20px;
 }
 
 /** Mini quote **/
-.miniquote{
-  padding:50px;
+.miniquote {
+  padding: 50px;
   .mb(80px);
 
-  p{
+  p {
     font-size: 22px;
     line-height: 40px;
     color: #ccc;
   }
 }
 
-.sidenav{
-  display:none;
+.sidenav {
+  display: none;
 }
 
 /** sidebar **/
-input[type="search"]{
-  width:100% ;
-  height:45px !important;
+input[type="search"] {
+  width: 100%;
+  height: 45px !important;
   .p(5px);
 }
 
-aside.widget{
+aside.widget {
   .mb(40px);
 
-  ul{
+  ul {
     .mp(0);
     .pt(5px);
     list-style-type: none;
 
-    li{
+    li {
       list-style-type: none;
       .mp(0);
       .mb(10px);
@@ -314,7 +312,7 @@ aside.widget{
       line-height: 30px;
       .pb(10px);
       border-bottom: 1px dotted #ddd;
-//      text-transform: uppercase;
+      //      text-transform: uppercase;
 
       a:hover {
         color: #FC354C;
@@ -325,17 +323,97 @@ aside.widget{
 
 h1.widget-title {
   font-family: "Coda", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
+  color: #333;
   font-weight: 600;
   .pb(10px);
   .mb(10px);
-  border-bottom:1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
-.page-title{
+.page-title {
   font-family: "Coda", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.nav-previous, .nav-next {
+  .pb(40px);
+  //  font-family: "Coda", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FC354C;
+}
+
+h3.comment-reply-title {
+  font-family: "Coda", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h2.comments-title {
+  font-family: "Coda", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  .pb(10px);
+  border-bottom: 4px solid #eee;
+  .mb(30px);
+  .mt(30px);
+}
+
+ol.comment-list {
+  .mp(0);
+  .mb(60px);
+
+  a {
+    color: #FC354C;
+  }
+  a:hover {
+    color: #FC354C;
+    font-weight: 600;
+  }
+
+  li{
+    .mb(30px);
+    list-style:none;
+  }
+
+  li ol{
+    .mt(30px);
+  }
+  article.comment-body{
+    .pb(30px);
+    border-bottom:1px dotted #ddd;
+
+  }
+
+  > li:last-of-type article.comment-body{
+    border-bottom: none;
+    .pb(0px);
+  }
+
+}
+
+.comment-meta {
+  .mb(15px);
+
+  img {
+    .mr(10px);
+  }
+}
+
+.comment-metadata {
+  display: none;
+}
+
+.comment-content {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#cancel-comment-reply-link{
+  font-size: 13px;
+}
+
