@@ -28,6 +28,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 64px;
+  font-size: 40px;
   color: #CE1836;
   color: #181419;
   font-family: "Coda";
@@ -77,6 +78,7 @@ h1.entry-title {
   color: #070001;
   margin-bottom: 40px;
   line-height: 48px;
+  line-height: 40px;
 }
 .entry-meta {
   font-size: 16px;
@@ -116,9 +118,9 @@ div.tiled-gallery {
   margin-bottom: 20px;
 }
 article.posts {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   border-bottom: 8px solid #eee;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .jp-carousel-image-meta,
 .jp-carousel-comment-form-container {

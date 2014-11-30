@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("posts"); ?>>
-	<header class="entry-header">
+	<header class="entry-header wow fadeIn">
 		<div class="entry-meta">
 			<?php drunk_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -17,12 +17,12 @@
 	</header><!-- .entry-header -->
 
 	<?php if(has_post_thumbnail()):?>
-		<div class="entry-thumb">
+		<div class="entry-thumb wow fadeIn">
 			<?php the_post_thumbnail();?>
 		</div>
 	<?php endif;?>
 
-	<div class="entry-content">
+	<div class="entry-content wow fadeIn">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(

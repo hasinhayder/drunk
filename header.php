@@ -30,7 +30,7 @@
 					   href="#content"><?php _e( 'Skip to content', 'drunk' ); ?></a>
 
 					<header id="masthead" class="site-header" role="banner">
-						<div class="site-branding">
+						<div class="site-branding wow bounceInDown">
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 							                          rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
@@ -43,10 +43,10 @@
 					<!-- #masthead -->
 				</div>
 				<div class="col-md-7">
-					<nav id="site-navigation" class="" role="navigation">
+					<nav id="site-navigation" class="wow fadeIn" role="navigation">
 						<button class="menu-toggle" aria-controls="menu"
 						        aria-expanded="false"><?php _e( 'Primary Menu', 'drunk' ); ?></button>
-						<?php wp_nav_menu( array( 'menu_class'=>'pull-right', 'theme_location' => 'primary' ) ); ?>
+						<?php wp_nav_menu( array( 'menu_class'=>'pull-right wow fadeIn', 'theme_location' => 'primary' ) ); ?>
 					</nav>
 					<!-- #site-navigation -->
 				</div>
