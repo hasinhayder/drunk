@@ -89,6 +89,7 @@ function drunk_posted_on() {
 	);
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	edit_post_link( __( 'Edit', 'drunk' ), '<span class="edit-link"> / ', '</span>' );
 
 }
 endif;
@@ -114,12 +115,12 @@ function drunk_entry_footer() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<div class="comments-link">';
 		comments_popup_link( __( 'Leave a comment', 'drunk' ), __( '1 Comment', 'drunk' ), __( '% Comments', 'drunk' ) );
-		echo '</span>';
+		echo '</div>';
 	}
 
-	edit_post_link( __( 'Edit', 'drunk' ), '<span class="edit-link">', '</span>' );
+	//edit_post_link( __( 'Edit', 'drunk' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
