@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-
 @import url(http://fonts.googleapis.com/css?family=Coda:400,800);
 /** Variables **/
 /** Mixins **/
@@ -15,12 +14,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .banner {
-  min-height: 200px;
+  position: relative;
+  min-height: 600px;
   padding-bottom: 80px;
   margin-bottom: 120px;
   background-image: url(../img/grey.png);
   background-image: url(../img/graphy.png);
+  background-image: url(../img/banner.jpg);
   background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.banner .banner-overlay {
+  min-height: 700px;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.3);
+  position: absolute;
 }
 .banner h1.site-title {
   padding: 0px;
@@ -28,11 +37,13 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 64px;
-  font-size: 40px;
+  font-size: 50px;
   color: #CE1836;
-  color: #181419;
   font-family: "Coda";
-  margin-top: 220px;
+  color: #FC354C;
+  color: #181419;
+  color: #f6fefe;
+  margin-top: 400px;
 }
 .banner h2.site-description {
   padding: 0px;
@@ -40,14 +51,16 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
+  color: #f6fefe;
+  color: #FC354C;
   color: #181419;
 }
-.banner nav ul {
+.banner nav.site-navigation ul {
   padding-top: 40px;
   list-style: none;
   list-style-type: none;
 }
-.banner nav ul li {
+.banner nav.site-navigation ul li {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -57,11 +70,24 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-.banner nav ul li a {
+.banner nav.site-navigation ul li a {
   text-decoration: none;
   color: #181419;
+  color: #f6fefe;
 }
-.banner nav ul li a:hover {
+.banner nav.site-navigation ul li a:hover {
+  color: #FC354C;
+}
+.banner .resp {
+  padding-top: 40px;
+  text-align: right;
+  color: #f6fefe;
+}
+.banner .resp i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.banner .resp a:hover {
   color: #FC354C;
 }
 .banner h1 a,
@@ -76,7 +102,7 @@ h1.entry-title {
   margin-top: 10px;
   text-transform: uppercase;
   color: #070001;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   line-height: 48px;
   line-height: 40px;
 }
@@ -133,4 +159,17 @@ span.tags-links a {
 span.tags-links,
 span.cat-links {
   margin-right: 20px;
+}
+/** Mini quote **/
+.miniquote {
+  padding: 50px;
+  margin-bottom: 80px;
+}
+.miniquote p {
+  font-size: 22px;
+  line-height: 40px;
+  color: #ccc;
+}
+.sidenav {
+  display: none;
 }

@@ -19,12 +19,30 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="sidenav" id="sidenav">
+    <nav id="site-navigation" class="wow fadeIn" role="navigation">
+        <button class="menu-toggle" aria-controls="menu"
+                aria-expanded="false"><?php _e( 'Primary Menu', 'drunk' ); ?></button>
+        <?php wp_nav_menu( array( 'menu_class'=>'pull-right wow fadeIn', 'theme_location' => 'primary' ) ); ?>
+    </nav>
+</div>
 
 <div id="page" class="hfeed site">
 	<div class="banner">
+        <div class="banner-overlay"></div>
 		<div class="container" id="header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resp">
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <!-- #site-navigation -->
+                </div>
+            </div>
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-12">
 
 					<a class="skip-link screen-reader-text"
 					   href="#content"><?php _e( 'Skip to content', 'drunk' ); ?></a>
@@ -42,17 +60,22 @@
 					</header>
 					<!-- #masthead -->
 				</div>
-				<div class="col-md-7">
-					<nav id="site-navigation" class="wow fadeIn" role="navigation">
-						<button class="menu-toggle" aria-controls="menu"
-						        aria-expanded="false"><?php _e( 'Primary Menu', 'drunk' ); ?></button>
-						<?php wp_nav_menu( array( 'menu_class'=>'pull-right wow fadeIn', 'theme_location' => 'primary' ) ); ?>
-					</nav>
-					<!-- #site-navigation -->
-				</div>
 			</div>
 		</div>
 	</div>
+<!--    <div class="miniquote">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-1"></div>-->
+<!--                <div class="col-md-10">-->
+<!--                    <p>Whenever you find yourself on the side of the majority, it is time to pause and reflect</p>-->
+<!--                    <p class="author"> Mark Twain</p>-->
+<!--                </div>-->
+<!--                <div class="col-md-1"></div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 
 	<div id="content" class="site-content">
