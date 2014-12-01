@@ -5,7 +5,9 @@ var data;
         new WOW().init();
 
         h = $(window).height();
-        $("#mainbanner").height(h-100);
+        $("#mainbanner").height(h-50);
+
+        $("html").niceScroll();
 
 
         //$("#mainbanner.bannervideo").vide({
@@ -30,7 +32,7 @@ var data;
                     $("#drunkmain").addClass("fadeIn");
                     $("#drunkmain").css({cursor:"default"});
                     h = $(window).height();
-                    $("#mainbanner").height(h-100);
+                    $("#mainbanner").height(h-50);
                     if(url != data.url){
                         //only if it's not homepage, then scroll
                         $("body").scrollTop(h);

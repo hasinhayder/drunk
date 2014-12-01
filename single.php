@@ -9,7 +9,7 @@ ob_start();
 get_sidebar();
 $sidebar = ob_get_clean();
 $classname = "col-md-9";
-if($sidebar) $classname = "col-md-8";
+if(!$sidebar) $classname = "col-md-8";
 get_header(); ?>
 <div class="container">
 	<div class="row">
