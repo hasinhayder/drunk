@@ -9,11 +9,21 @@
  *
  * @package drunk
  */
-
+ob_start();
+get_sidebar();
+$sidebar   = ob_get_clean();
+$classname = "col-md-9";
+if ( ! $sidebar ) {
+	$classname = "col-md-10";
+}
 get_header(); ?>
+
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<?php if ( ! $sidebar ): ?>
+			<div class="col-md-1"></div>
+		<?php endif; ?>
+		<div class="<?php echo $classname; ?>">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 
@@ -30,15 +40,20 @@ get_header(); ?>
 
 					<?php endwhile; // end of the loop. ?>
 
-				</main><!-- #main -->
-			</div><!-- #primary -->
-		</div>
-		<div class="col-md-3">
-			<?php get_sidebar(); ?>
-
+				</main>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+			<?php if ( ! $sidebar ): ?>
+				<div class="col-md-1"></div>
+			<?php endif; ?>
+			<?php if ( $sidebar ): ?>
+				<div class="col-md-3">
+					<?php echo $sidebar; ?>
+				</div>
+			<?php endif; ?>
 		</div>
 	</div>
-</div>
 
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
