@@ -373,7 +373,6 @@ ol.comment-list > li:last-of-type article.comment-body {
   margin-top: 50px;
 }
 .site-description p {
-  font-family: "Coda", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #373737;
@@ -385,7 +384,6 @@ nav.site-navigation {
   margin-top: 15px;
 }
 nav.site-navigation ul {
-  font-family: "Coda", sans-serif;
   list-style: none;
   list-style-type: none;
   padding: 0px;
