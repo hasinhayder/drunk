@@ -367,15 +367,16 @@ ol.comment-list > li:last-of-type article.comment-body {
   font-size: 18px;
   font-weight: 600;
 }
-.site-description {
+div.site-description {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 50px;
 }
-.site-description p {
+div.site-description p {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 22px;
   color: #373737;
+  font-weight: 600;
 }
 .clear {
   clear: both;
