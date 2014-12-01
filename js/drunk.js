@@ -39,7 +39,7 @@ var data;
                     }else{
                         $("body").scrollTop(0);
                     }
-
+                    $(document).trigger('ready');
                 }
             }
         },{
