@@ -10,6 +10,8 @@ var data;
 
         $("html").niceScroll();
 
+        $("#sidenav").show();
+
 
         //$("#mainbanner.bannervideo").vide({
         //    webm:"http://mazwai.com/system/posts/videos/000/000/138/webm/matt_devir--one_minute_drive.webm",
@@ -49,6 +51,9 @@ var data;
         //    }
         //});
 
-        $('#sidemenu').bigSlide();
+        $('#sidemenu').bigSlide({
+            side:"left",
+            menuWidth:"350px"
+        });
     });
 })(jQuery);

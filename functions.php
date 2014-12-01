@@ -8,6 +8,7 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+show_admin_bar(0);
 if ( ! isset( $content_width ) ) {
 	$content_width = 800; /* pixels */
 }

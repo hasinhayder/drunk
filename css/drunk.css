@@ -12,6 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 .bannerbg {
   background-image: url(../img/banner2.jpg);
@@ -64,6 +65,9 @@ body {
   color: #FC354C;
   color: #181419;
 }
+.banner #sidenav {
+  display: none;
+}
 .banner nav.site-navigation ul {
   padding-top: 40px;
   list-style: none;
@@ -89,7 +93,7 @@ body {
 }
 .banner .resp {
   padding-top: 40px;
-  text-align: right;
+  text-align: left;
   color: #181419;
 }
 .banner .resp i {
@@ -191,7 +195,11 @@ div.comments-link {
   color: #ccc;
 }
 .sidenav {
-  display: none;
+  position: fixed;
+  width: 350px;
+  /*should match the above value*/
+  background-color: #ffffff;
+  height: 1000px;
 }
 /** sidebar **/
 input[type="search"] {
@@ -312,13 +320,6 @@ ol.comment-list > li:last-of-type article.comment-body {
   padding-top: 12px;
 }
 /** side menu **/
-.panel {
-  position: fixed;
-  left: -15.625em;
-  /*left or right and the width of your navigation panel*/
-  width: 15.625em;
-  /*should match the above value*/
-}
 .wrap {
   position: relative;
 }

@@ -65,6 +65,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   //  background-image: url(../img/light_wool.png);
 
   //  -webkit-text-stroke: 0.35px;
@@ -132,8 +133,10 @@ body {
     //    .mb(70px);
   }
 
-  nav .menu {
+  #sidenav {
+
     //    text-align: center ;
+    display: none;
   }
 
   nav.site-navigation ul {
@@ -165,7 +168,7 @@ body {
 
   .resp {
     .pt(40px);
-    text-align: right;
+    text-align: left;
     color: #181419;
 
     i {
@@ -295,7 +298,12 @@ div.comments-link {
 }
 
 .sidenav {
-  display: none;
+  //display: none;
+  position: fixed;
+//  left: -350px; /*left or right and the width of your navigation panel*/
+  width: 350px; /*should match the above value*/
+  background-color: #ffffff;
+  height:1000px;
 }
 
 /** sidebar **/
@@ -439,9 +447,7 @@ ol.comment-list {
 
 /** side menu **/
 .panel {
-  position: fixed;
-  left: -15.625em; /*left or right and the width of your navigation panel*/
-  width: 15.625em; /*should match the above value*/
+
 }
 .wrap {
   position: relative;
