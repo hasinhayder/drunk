@@ -13,7 +13,7 @@ var data;
 
         $("#sidenav").niceScroll();
         $("#sidenav").height(h);
-        $(".sidenav-content").height(h-100);
+        $(".sidenav-content").height(h-80);
 
 
         //$("#mainbanner.bannervideo").vide({
