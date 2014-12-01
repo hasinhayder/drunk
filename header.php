@@ -19,23 +19,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="drunkmain">
-<div class="sidenav" id="sidenav">
+<div class="sidenav panel" id="sidenav">
     <nav id="site-navigation" class="wow" role="navigation">
         <button class="menu-toggle" aria-controls="menu"
                 aria-expanded="false"><?php _e( 'Primary Menu', 'drunk' ); ?></button>
         <?php wp_nav_menu( array( 'menu_class'=>'pull-right wow fadeIn', 'theme_location' => 'primary' ) ); ?>
     </nav>
 </div>
+<div id="drunkmain" class="wrap">
 
-<div id="page" class="hfeed site">
+
+<div id="page" class="hfeed site ">
 	<div class="banner bannerbg" id="mainbanner">
         <div class="banner-overlay"></div>
 		<div class="container" id="header">
             <div class="row">
                 <div class="col-md-12">
                     <div class="resp wow fadeInDown">
-                        <a href="#">
+                        <a href="#sidenav" id="sidemenu">
                             <i class="fa fa-bars"></i>
                         </a>
                     </div>

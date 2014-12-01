@@ -309,4 +309,16 @@ ol.comment-list > li:last-of-type article.comment-body {
 }
 #secondary {
   padding-left: 10px;
+  padding-top: 12px;
+}
+/** side menu **/
+.panel {
+  position: fixed;
+  left: -15.625em;
+  /*left or right and the width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/
+}
+.wrap {
+  position: relative;
 }
