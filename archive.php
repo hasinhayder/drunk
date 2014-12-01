@@ -10,13 +10,13 @@ ob_start();
 get_sidebar();
 $sidebar = ob_get_clean();
 $classname = "col-md-9";
-if(!$sidebar) $classname = "col-md-8";
+if(!$sidebar) $classname = "col-md-10";
 get_header(); ?>
 
 <div class="container">
 	<div class="row">
 		<?php if(!$sidebar):?>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		<?php endif; ?>
 		<div class="<?php echo $classname;?>">
 			<div id="primary" class="content-area">
@@ -58,7 +58,7 @@ get_header(); ?>
 			<!-- #primary -->
 		</div>
 		<?php if(!$sidebar):?>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		<?php endif; ?>
 		<?php if($sidebar):?>
 			<div class="col-md-3">

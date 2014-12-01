@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-
 @import url(http://fonts.googleapis.com/css?family=Coda:400,800);
 /** Variables **/
 /** Mixins **/
@@ -30,7 +29,7 @@ body {
 }
 .banner {
   position: relative;
-  min-height: 600px;
+  min-height: 900px;
   padding-bottom: 80px;
   margin-bottom: 80px;
   overflow: hidden;
@@ -213,11 +212,11 @@ aside.widget ul li {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 30px;
-  padding-bottom: 10px;
+  line-height: 26px;
+  padding-bottom: 5px;
   border-bottom: 1px dotted #ddd;
 }
 aside.widget ul li a:hover {
@@ -225,10 +224,10 @@ aside.widget ul li a:hover {
 }
 h1.widget-title {
   font-family: "Coda", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #333;
-  font-weight: 600;
+  color: #444;
+  font-weight: 700;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
@@ -307,4 +306,7 @@ ol.comment-list > li:last-of-type article.comment-body {
 }
 #cancel-comment-reply-link {
   font-size: 13px;
+}
+#secondary {
+  padding-left: 10px;
 }
