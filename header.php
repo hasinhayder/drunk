@@ -20,13 +20,9 @@
 
 <body <?php body_class(); ?>>
 <div class="sidenav" id="sidenav" style="display:none;">
-    <nav id="site-navigation" class="wow" role="navigation">
-        <button class="menu-toggle" aria-controls="menu"
-                aria-expanded="false"><?php _e('Primary Menu', 'drunk'); ?></button>
-        <?php wp_nav_menu(array('menu_class' => ' wow fadeIn', 'theme_location' => 'primary')); ?>
-    </nav>
+    <?php get_template_part("sidenav");?>
 </div>
-<div id="drunkmain" class="wrap push ">
+<div id="drunkmain" class="">
     <div id="page" class="hfeed site ">
         <div class="banner bannerbg" id="mainbanner">
             <div class="banner-overlay"></div>
