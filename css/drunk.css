@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
 @import url(http://fonts.googleapis.com/css?family=Coda:400,800);
 /** Variables **/
 /** Mixins **/
@@ -30,7 +31,7 @@ body {
 }
 .banner {
   position: relative;
-  min-height: 900px;
+  height: 900px;
   padding-bottom: 80px;
   margin-bottom: 80px;
   overflow: hidden;
@@ -198,6 +199,7 @@ div.comments-link {
   position: fixed;
   width: 350px;
   /*should match the above value*/
+
   background-color: #ffffff;
   height: 1000px;
 }

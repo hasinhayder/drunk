@@ -5,7 +5,7 @@ var data;
         new WOW().init();
 
         h = $(window).height();
-        $("#mainbanner").height(h-50);
+        $("#mainbanner").css({height:(h)});
         if(h>800) $("h1.site-title").css({marginTop:(h-500)});
 
         $("html").niceScroll();
