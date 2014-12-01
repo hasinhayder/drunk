@@ -68,6 +68,7 @@ var data;
                 $("#sidenav").css({transform: "translateX(0px)"});
                 $(this).data("open",0);
             }
+            return false;
         });
 
 
