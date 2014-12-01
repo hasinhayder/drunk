@@ -26,5 +26,5 @@
 
 </div>
 <div class="credit">
-	<p><strong>DRUNK,</strong> This Beautiful Theme is Created By <span class="theme-author">Hasin Hayder</span></p>
+	<p><strong>DRUNK,</strong> This Beautiful Theme is Created By <span class="theme-author">H2</span></p>
 </div>

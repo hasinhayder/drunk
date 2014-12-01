@@ -398,7 +398,6 @@ nav.site-navigation ul li {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 600;
 }
 nav.site-navigation ul li ul.sub-menu {
   padding-top: 10px;
