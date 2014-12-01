@@ -24,7 +24,7 @@
 </div>
 <div id="drunkmain" class="">
     <div id="page" class="hfeed site ">
-        <div class="banner bannerbg" id="mainbanner">
+        <div class="banner bannerbg wow fadeIn" id="mainbanner">
             <div class="banner-overlay"></div>
             <div class="container" id="header">
                 <div class="row">
