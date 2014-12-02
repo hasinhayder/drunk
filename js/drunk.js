@@ -37,9 +37,7 @@ var data;
                     $(".loader").removeClass("fadeOut");
                     $(".loader").css({zIndex:9999});
                     $(".loader").show();
-
-
-
+                    
 
                 }
             },
@@ -54,7 +52,7 @@ var data;
                     $(".loader").addClass("fadeOut");
                     $(".loader").css({zIndex:-9999});
 
-                    $("#drunkmain").css({cursor:"default"});
+                    $("body").css({cursor:"default"});
                     h = $(window).height();
                     $("#mainbanner").height(h-50);
                     $("body").trigger("post-load");
