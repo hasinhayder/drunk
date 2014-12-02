@@ -12,7 +12,6 @@ var data;
 
         $("html").niceScroll();
         $("#sidenav").show();
-        $(".loader").show();
 
         $("#sidenav").niceScroll();
         $("#sidenav").height(h);
@@ -29,10 +28,13 @@ var data;
             onStart: {
                 duration: 550,
                 render: function (url, $container) {
+
                     $("#drunkmain").addClass("animated fadeOut");
                     $(".loader").addClass("animated fadeIn");
                     $(".loader").removeClass("fadeOut");
                     $(".loader").css({zIndex:9999});
+                    $(".loader").show();
+
 
                 }
             },
