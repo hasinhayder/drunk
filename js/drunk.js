@@ -3,6 +3,25 @@ var data;
 var ss;
 (function ($) {
 
+    $("body").off("click","#sidemenu");
+    $('body').on("click", "#sidemenu", function () {
+        console.log('click');
+        if ($(this).data("open") != 1) {
+            $("body").css({overflowY: "hidden"});
+            $("#drunkmain").css({transform: "translateX(340px)"});
+            $("#sidenav").css({transform: "translateX(340px)"});
+            $(this).data("open", 1);
+
+        } else {
+            $("body").css({overflowY: "auto"});
+
+            $("#drunkmain").css({transform: "translateX(0px)"});
+            $("#sidenav").css({transform: "translateX(0px)"});
+            $(this).data("open", 0);
+        }
+        return false;
+    });
+
     $(document).ready(function () {
         new WOW().init();
 
@@ -54,6 +73,7 @@ var ss;
                     $(".loader").css({zIndex: -9999});
 
                     $("#drunkmain").css({cursor: "default"});
+                    $("#sidenav").css({cursor: "default"});
                     h = $(window).height();
                     $("#mainbanner").height(h - 50);
                     $("body").trigger("post-load");
@@ -70,7 +90,7 @@ var ss;
             }
         }).data('smoothState');
 
-        $("nav.site-navigation").on("click","a",function(){
+        $("#sidenav").on("click","a",function(){
             var url = $(this).attr("href");
             ss.load(url);
             return false;
@@ -78,23 +98,7 @@ var ss;
         });
 
 
-        $('body').on("click", "#sidemenu", function () {
-            console.log('click');
-            if ($(this).data("open") != 1) {
-                $("body").css({overflowY: "hidden"});
-                $("#drunkmain").css({transform: "translateX(340px)"});
-                $("#sidenav").css({transform: "translateX(340px)"});
-                $(this).data("open", 1);
 
-            } else {
-                $("body").css({overflowY: "auto"});
-
-                $("#drunkmain").css({transform: "translateX(0px)"});
-                $("#sidenav").css({transform: "translateX(0px)"});
-                $(this).data("open", 0);
-            }
-            return false;
-        });
 
     });
 })(jQuery);

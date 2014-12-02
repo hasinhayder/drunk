@@ -107,7 +107,7 @@ function drunk_scripts() {
 	wp_enqueue_script( 'drunk-ss', get_template_directory_uri()."/js/jquery.smoothState.js", array("jquery"), '20130115', true );
 	wp_enqueue_script( 'drunk-bigslide', get_template_directory_uri()."/js/bigSlide.js", array("jquery"), '20130115', true );
 	wp_enqueue_script( 'drunk-ns', "//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js", array("jquery"), '20130115', true );
-	wp_enqueue_script( 'drunk-main', get_template_directory_uri()."/js/drunk.js", array("jquery"), '20141202.3', true );
+	wp_enqueue_script( 'drunk-main', get_template_directory_uri()."/js/drunk.js", array("jquery"), '20141202.4', true );
 	wp_localize_script( 'drunk-main',"data",array("url"=>site_url("/")) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
