@@ -66,7 +66,8 @@ var data;
             }
         });
 
-        $('#sidemenu').on("click",function(){
+        $('body').on("click","#sidemenu",function(){
+            console.log('click');
             if($(this).data("open")!=1) {
                 $("body").css({overflowY:"hidden"});
                 $("#drunkmain").css({transform: "translateX(340px)"});
