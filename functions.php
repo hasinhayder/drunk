@@ -114,6 +114,12 @@ function drunk_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+    if(class_exists("themePacific_Jetpack_Tiled_Gallery")){
+        $gallery = new themePacific_Jetpack_Tiled_Gallery;
+        $gallery->default_scripts_and_styles();
+
+    }
+
 
 }
 add_action( 'wp_enqueue_scripts', 'drunk_scripts' );
