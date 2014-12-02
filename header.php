@@ -19,6 +19,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="loader">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/loader.gif" alt="loader"/>
+</div>
 <div class="sidenav" id="sidenav" style="display:none;">
     <?php get_template_part("sidenav");?>
 </div>

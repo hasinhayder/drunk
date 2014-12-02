@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-
 @import url(http://fonts.googleapis.com/css?family=Coda:400,800);
 /** Variables **/
 /** Mixins **/
@@ -16,7 +15,8 @@ body {
   overflow-x: hidden;
 }
 #drunkmain,
-#sidenav {
+#sidenav,
+.loader {
   -webkit-transition: all 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
 }
@@ -181,10 +181,8 @@ div.comments-link {
   position: fixed;
   left: -340px;
   /*left or right and the width of your navigation panel*/
-
   width: 340px;
   /*should match the above value*/
-
   background-color: #ffffff;
   height: 1000px;
   overflow-y: hidden;
@@ -417,4 +415,19 @@ nav.site-navigation ul li a:hover {
   padding-right: 20px;
   font-size: 12px;
   color: #333;
+}
+/** loader **/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0
+  width:1000px;
+  height: 900px;
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  z-index: -999999;
+}
+.loader img {
+  margin-top: 250px;
 }

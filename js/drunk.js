@@ -5,11 +5,14 @@ var data;
         new WOW().init();
 
         h = $(window).height();
+        w = $(window).width();
+        $(".loader").css({height:h, width:w});
         $("#mainbanner").css({height:(h)});
         if(h>800) $("h1.site-title").css({marginTop:(h-500)});
 
         $("html").niceScroll();
         $("#sidenav").show();
+        $(".loader").show();
 
         $("#sidenav").niceScroll();
         $("#sidenav").height(h);
@@ -27,7 +30,10 @@ var data;
                 duration: 550,
                 render: function (url, $container) {
                     $("#drunkmain").addClass("animated fadeOut");
-                    console.log("fadeout");
+                    $(".loader").addClass("animated fadeIn");
+                    $(".loader").removeClass("fadeOut");
+                    $(".loader").css({zIndex:9999});
+
                 }
             },
             onEnd:{
@@ -36,10 +42,16 @@ var data;
                     $("#drunkmain").html($content);
                     $("#drunkmain").removeClass("fadeOut");
                     $("#drunkmain").addClass("fadeIn");
+
+                    $(".loader").removeClass("fadeIn");
+                    $(".loader").addClass("fadeOut");
+                    $(".loader").css({zIndex:-9999});
+
                     $("#drunkmain").css({cursor:"default"});
                     h = $(window).height();
                     $("#mainbanner").height(h-50);
                     $("body").trigger("post-load");
+                    $("body").trigger("drunk-content-load");
                     if(url != data.url){
                         //only if it's not homepage, then scroll
                         $("body").scrollTop(h);

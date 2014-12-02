@@ -71,7 +71,7 @@ body {
   //  -webkit-text-stroke: 0.35px;
 }
 
-#drunkmain, #sidenav{
+#drunkmain, #sidenav, .loader{
   -webkit-transition: all 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
 }
@@ -565,4 +565,21 @@ nav.site-navigation ul {
   .pr(20px);
   font-size: 12px;
   color: #333;
+}
+
+/** loader **/
+.loader{
+  position:fixed;
+  top:0;
+  left:0
+  width:1000px;
+  height:900px;
+  display:none;
+  text-align: center;
+  background-color: #fff;
+  z-index: -999999;
+
+  img{
+    .mt(250px);
+  }
 }
