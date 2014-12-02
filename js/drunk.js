@@ -23,17 +23,22 @@ var data;
         //    mp4:"http://mazwai.com/system/posts/videos/000/000/138/original/matt_devir--one_minute_drive.mp4"
         //});
 
-        $('#drunkmain').smoothState({
-            anchors:"h1.entry-title a, .nav-previous a, .nav-next a, .site-title a, li a, .cat-links a, .tag-links a",
+        $('#body').smoothState({
+            anchors:"h1.entry-title a, .nav-previous a, .nav-next a, .site-title a, li a, .cat-links a, .tag-links a, .site-navigation a",
             onStart: {
                 duration: 550,
                 render: function (url, $container) {
+
+                    $("#drunkmain").css({transform: "translateX(0px)"});
+                    $("#sidenav").css({transform: "translateX(0px)"});
 
                     $("#drunkmain").addClass("animated fadeOut");
                     $(".loader").addClass("animated fadeIn");
                     $(".loader").removeClass("fadeOut");
                     $(".loader").css({zIndex:9999});
                     $(".loader").show();
+
+
 
 
                 }

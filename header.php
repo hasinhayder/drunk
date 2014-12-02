@@ -18,7 +18,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="body">
 <div class="loader">
     <img src="<?php echo get_template_directory_uri(); ?>/img/loader.gif" alt="loader"/>
 </div>
